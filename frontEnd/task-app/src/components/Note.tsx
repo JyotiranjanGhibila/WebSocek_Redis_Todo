@@ -29,7 +29,7 @@ const Note = () => {
   
     const fetchTasks = async () => {
       try {
-        const response = await axios.get<Task[]>('http://localhost:5000/api/tasks/fetchAllTasks');
+        const response = await axios.get<Task[]>('https://fullstack-task-jyotiranjan-ghibila-ih9p.onrender.com/api/tasks/fetchAllTasks');
         console.log("res:", response)
         setTasks(response.data);
       } catch (error) {
